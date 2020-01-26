@@ -1,0 +1,103 @@
+﻿@import '../bootstrap/scss/bootstrap';
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+
+// @include scrollbars(13px, $primaryColor, #FFF);
+
+body {
+  background: $lightBg;
+}
+
+.header {
+  background: #FFF;
+  border-bottom: 1px solid #EEF1F6;
+}
+
+.logo {
+  svg {
+    height: 36px;
+  }
+}
+
+.navbar {
+  .nav-item {
+    margin-left: 2.25rem;
+  }
+  .nav-link {
+    display: block;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .btn-primary {
+    .nav-link {
+      color: #FFF;
+    }
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: $primaryColor;
+  border-color: $primaryColor;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  span {
+    color: #fff !important;
+    font-size: 14px;
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #c73025;
+  border-color: #c73025;
+}
+.btn-primary:active {
+  background-color: #c73025;
+  border-color: #c73025;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  background-color: #c73025;
+  border-color: #c73025;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: $primaryColor;
+    border-color: $primaryColor;
+}
+
+
+.page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  .footer-info {
+    border-top: 1px solid #EEF1F6;
+    span {
+      color: #282828;
+      font: {
+        size: 15px;
+        weight: 300;
+      }
+      line-height: 23px;
+    }
+  }
+}
+
