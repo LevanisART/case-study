@@ -122,6 +122,12 @@
     font-size: 16px;
     line-height: 29px;
   }
+  .section-subtitle {
+    color: $textColor;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 29px;
+  }
 }
 
 .light-bg {
@@ -176,6 +182,59 @@
   img {
     box-shadow: 0 4px 20px rgba(0, 0, 0, .13);
     border-radius: 8px;
+  }
+}
+
+
+.before-after {
+  .tab {
+    background: #FFF;
+    border: 1px solid #F6F6F8;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
+    border-radius: 10px;
+    .tab-title {
+      color: $titleColor;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .tab-description {
+      color: $textColor;
+      font-size: 15px;
+      line-height: 24px;
+    }
+    &.active {
+      background: $primaryColor;
+      .tab-title {
+        color: #FFF;
+      }
+      .tab-description {
+        color: #FFF;
+      }
+    }
+  }
+
+  .website-shadow {
+    width: 80%;
+    height: 204px;
+    background: #000;
+    position: absolute;
+    bottom: 0px;
+    box-shadow: 0 8px 60px rgba(0, 0, 0, .25);
+  }
+
+  .website {
+    height: 496px;
+    background: #E8E8E8;
+    border-radius: 40px;
+    position: relative;
+    .website-img {
+      overflow-y: scroll;
+      height: 100%;
+      border-radius: 11px;
+    }
+    img {
+      width: 100%;
+    }
   }
 }
 
