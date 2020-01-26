@@ -120,7 +120,62 @@
   .section-description {
     color: $textColor;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 29px;
+  }
+}
+
+.light-bg {
+  background: $lightBg;
+}
+
+
+.services {
+  .services-item {
+    .service-icon {
+      width: 55px;
+      height: 55px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
+    }
+    .service-title {
+      color: $textColor;
+      font: {
+        size: 18px;
+        weight: 500;
+      }
+    }
+  }
+}
+
+
+.results {
+  .result {
+    box-shadow: 0 10px 35px rgba(0, 56, 107, .06);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 2px;
+    .result-heading {
+      background: $primaryColor;
+      width: 72px;
+      height: 65px;
+      color: #FFF;
+      border-radius: 16px;
+      font: {
+        size: 20px;
+        weight: 700;
+      }
+    }
+    .result-description {
+      color: #3C4067;
+      line-height: 27px;
+      font-size: 15px;
+    }
+  }
+}
+
+.section-img {
+  img {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .13);
+    border-radius: 8px;
   }
 }
 
