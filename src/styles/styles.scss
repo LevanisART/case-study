@@ -6,10 +6,6 @@
 
 // @include scrollbars(13px, $primaryColor, #FFF);
 
-body {
-  background: $lightBg;
-}
-
 .header {
   background: #FFF;
   border-bottom: 1px solid #EEF1F6;
@@ -28,8 +24,8 @@ body {
   .nav-link {
     display: block;
     color: #000;
-    font-weight: 500;
     font-size: 15px;
+    font-weight: 500;
   }
   .btn-primary {
     .nav-link {
@@ -37,6 +33,7 @@ body {
     }
   }
 }
+
 
 .btn-primary {
   color: #fff;
@@ -87,6 +84,47 @@ body {
   flex: 1;
 }
 
+.section-top {
+  background-image: url('../images/hunt-a-killer.jpg');
+  background-size: cover;
+  background-position: center -70px;
+  height: 543px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+  }
+  .casestudy-title {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 600;
+    width: 630px;
+    text-align: center;
+    line-height: 45px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+  }
+}
+
+.section {
+  .section-title {
+    color: $titleColor;
+    font: {
+      size: 28px;
+      weight: 600;
+    }
+  }
+  .section-description {
+    color: $textColor;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+
 .footer {
   .footer-info {
     border-top: 1px solid #EEF1F6;
@@ -100,4 +138,3 @@ body {
     }
   }
 }
-
