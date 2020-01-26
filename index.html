@@ -15,7 +15,7 @@
         <div class="container my-1">
           <div class="d-flex align-items-center justify-content-between">
             <div class="logo mt-n1">
-              <a href="#"><img src="images/logo.svg" alt=""></a>
+              <a class="py-3" href="#"><img src="images/logo.svg" alt=""></a>
             </div>
             
             <nav class="navbar navbar-expand-lg p-0">
@@ -137,13 +137,13 @@
 
               <div class="before-after mt-5 mb-4">
                 <div class="d-flex align-items-center justify-content-between pt-3">
-                  <div class="col-4 pr-0 d-flex flex-column">
-                    <a href="#" class="tab active mb-2 p-4 d-flex flex-column">
+                  <div class="col-4 pr-0 d-flex flex-column nav" role="tablist" aria-orientation="vertical">
+                    <a class="tab active mb-2 p-4 d-flex flex-column" data-toggle="pill" href="#before" role="tab" aria-controls="v-pills-home" aria-selected="true">
                       <div class="tab-title ml-3">BEFORE</div>
                       <p class="tab-description ml-3 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </a>
 
-                    <a href="#" class="tab mt-4 p-4 d-flex flex-column">
+                    <a class="tab mt-4 p-4 d-flex flex-column" data-toggle="pill" href="#after" role="tab" aria-controls="v-pills-profile" aria-selected="false">
                       <div class="tab-title ml-3">AFTER</div>
                       <p class="tab-description ml-3 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </a>
@@ -151,27 +151,52 @@
 
                   <div class="col-7 pl-5 pr-0 d-flex justify-content-center position-relative">
                     <div class="website-shadow pl-4"></div>
-                    <div class="website p-4">
-                      <div class="website-img">
+                    <div class="website p-4 tab-content" id="v-pills-tabContent">
+                      <div class="website-img tab-pane fade show active" id="before" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         <img src="images/before.png" alt="" />
+                      </div>
+                      <div class="website-img tab-pane fade" id="after" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <img src="images/after.png" alt="" />
                       </div>
                     </div>
                   </div>
                 </div>
-                
+              </div>
+            </div>
+          </div>
+
+          <div class="section my-5 py-5">
+            <div class="container mt-2 mb-4">
+              <h2 class="section-title text-center">See What Hunt A Killer Say About Sweat Pants Agency</h2>
+              <div class="mt-5 d-flex justify-content-center">
+                <div class="video col-10">
+                  <video poster="images/video.png" width="100%" controls>
+                    <source src="Sweatpants-Agency.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
               </div>
             </div>
           </div>
           
+
         </div>
       
       </main>
     </div>
 
-    <footer class="footer mt-5 pt-3">
-      <div class="footer-info bg-white py-4">
-        <div class="container d-flex justify-content-center flex-wrap">
-          <span class="my-2 mr-4">All Rights Reserved © SweatPants Agency 2019 | <a href="#">Privacy Policy</a></span>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='scripts/bootstrap.min.js'></script>
+
+    <footer class="footer mt-5">
+      <div class="container py-5 d-flex justify-content-center flex-wrap">
+        <div class="logo mt-n1">
+          <a class="p-4" href="#"><img src="images/logo.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="footer-info py-3">
+        <div class="container my-1 d-flex justify-content-center flex-wrap">
+          <span>All Rights Reserved © SweatPants Agency 2019 | <a href="#">Privacy Policy</a></span>
         </div>
       </div>
     </footer>
@@ -179,650 +204,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Checkout Page</title>
-  <link rel="stylesheet" href="styles/main.min.css">
-</head>
-
-<body>
-  <div class="page ">
-    <div class="wrapper">
-      <header class="header py-3">
-        <div class="container">
-          <div class="logo">
-            <a href="#"><img src="images/logo.png" alt=""></a>
-          </div>
-        </div>
-      </header>
-
-      <main class="content mt-5 pt-2 container">
-        <div class="checkout-container bg-white">
-          <div class="d-flex flex-wrap">
-            <div class="main-block">
-              
-              <div class="block col-12">
-                <div class="d-flex flex-column">
-                  <h2 class="title">Order Summary</h2>
-  
-                  <div class="mt-4">
-                    <div class="order-summary-table table-responsive">
-                      <table class="table mb-1">
-                        <thead class="thead-light">
-                          <tr>
-                            <th scope="col">Item Name</th>
-                            <th class="text-right" scope="col">Price</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>2nd location - $175 per month</td>
-                            <td class="text-right">$175.00</td>
-                          </tr>
-                          <tr>
-                            <td>4th location - $175 per month</td>
-                            <td class="text-right">$175.00</td>
-                          </tr>
-                          <tr>
-                            <td>6th location - $175 per month</td>
-                            <td class="text-right">$175.00</td>
-                          </tr>
-                          <tr class="total">
-                            <td class="py-4">Total</td>
-                            <td class="py-4 text-right">$515.00</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="block col-12">
-                <div class="d-flex flex-column">
-                  <h2 class="title">Your Details</h2>
-  
-                  <div class="form-groups mt-4">
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="CompanyName">Company Name</label>
-                      <input type="text" placeholder="Company Name" class="form-control col-md-7" id="CompanyName">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="FirstName">Owner First Name</label>
-                      <input type="text" placeholder="First Name" class="form-control col-md-7" id="FirstName">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="LastName">Owner Last Name</label>
-                      <input type="text" placeholder="Last Name" class="form-control col-md-7" id="LastName">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="Email">E-mail address</label>
-                      <input type="email" placeholder="E-mail address" class="form-control col-md-7" id="Email">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="Phone">Phone Number</label>
-                      <input type="text" placeholder="Phone Number" class="form-control col-md-7" id="Phone">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="Phone">Mobile Number</label>
-                      <input type="text" placeholder="Mobile Number" class="form-control col-md-7" id="Mobile">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="Address">Address</label>
-                      <input type="text" placeholder="Address" class="form-control col-md-7" id="Address">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="City">City</label>
-                      <input type="text" placeholder="City" class="form-control col-md-7" id="City">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="StateProvinceRegion">State / Province / Region</label>
-                      <input type="text" placeholder="State" class="form-control col-md-7" id="StateProvinceRegion">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="PostalCode">Postal Code</label>
-                      <input type="text" placeholder="Postal Code" class="form-control col-md-7" id="PostalCode">
-                    </div>
-                    <div class="form-group mb-0 d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="Country">Country</label>
-                      <select class="form-control col-md-7" id="Country">
-                        <option value=""></option>
-                        <option selected="selected" value="1">United States</option>
-                        <option value="2">United Kingdom</option>
-                        <option value="3">Germany</option>
-                        <option value="4">Australia</option>
-                        <option value="5">Canada</option>
-                        <option value="6">France</option>
-                        <option value="7">Grenada</option>
-                        <option value="8">Afghanistan</option>
-                        <option value="9">Åland Islands</option>
-                        <option value="10">Albania</option>
-                        <option value="11">Algeria</option>
-                        <option value="12">American Samoa</option>
-                        <option value="13">Andorra</option>
-                        <option value="14">Angola</option>
-                        <option value="15">Anguilla</option>
-                        <option value="16">Antarctica</option>
-                        <option value="17">Antigua and Barbuda</option>
-                        <option value="18">Argentina</option>
-                        <option value="19">Armenia</option>
-                        <option value="20">Aruba</option>
-                        <option value="21">Austria</option>
-                        <option value="22">Azerbaijan</option>
-                        <option value="23">Bahamas</option>
-                        <option value="24">Bahrain</option>
-                        <option value="25">Bangladesh</option>
-                        <option value="26">Barbados</option>
-                        <option value="27">Belarus</option>
-                        <option value="28">Belgium</option>
-                        <option value="29">Belize</option>
-                        <option value="30">Benin</option>
-                        <option value="31">Bermuda</option>
-                        <option value="32">Bhutan</option>
-                        <option value="33">Bolivia</option>
-                        <option value="34">Bosnia and Herzegovina</option>
-                        <option value="35">Botswana</option>
-                        <option value="36">Bouvet Island</option>
-                        <option value="37">Brazil</option>
-                        <option value="38">British Indian Ocean Territory</option>
-                        <option value="39">Brunei Darussalam</option>
-                        <option value="40">Bulgaria</option>
-                        <option value="41">Burkina Faso</option>
-                        <option value="42">Burundi</option>
-                        <option value="43">Cambodia</option>
-                        <option value="44">Cameroon</option>
-                        <option value="45">Cape Verde</option>
-                        <option value="46">Cayman Islands</option>
-                        <option value="47">Central African Republic</option>
-                        <option value="48">Chad</option>
-                        <option value="49">Chile</option>
-                        <option value="50">China</option>
-                        <option value="51">Christmas Island</option>
-                        <option value="52">Cocos (Keeling) Islands</option>
-                        <option value="53">Colombia</option>
-                        <option value="54">Comoros</option>
-                        <option value="55">Congo</option>
-                        <option value="56">Congo, The Democratic Republic of The</option>
-                        <option value="57">Cook Islands</option>
-                        <option value="58">Costa Rica</option>
-                        <option value="59">Cote D'ivoire</option>
-                        <option value="60">Croatia</option>
-                        <option value="61">Cuba</option>
-                        <option value="62">Cyprus</option>
-                        <option value="63">Czech Republic</option>
-                        <option value="64">Denmark</option>
-                        <option value="65">Djibouti</option>
-                        <option value="66">Dominica</option>
-                        <option value="67">Dominican Republic</option>
-                        <option value="68">Ecuador</option>
-                        <option value="69">Egypt</option>
-                        <option value="70">El Salvador</option>
-                        <option value="71">Equatorial Guinea</option>
-                        <option value="72">Eritrea</option>
-                        <option value="73">Estonia</option>
-                        <option value="74">Ethiopia</option>
-                        <option value="75">Falkland Islands (Malvinas)</option>
-                        <option value="76">Faroe Islands</option>
-                        <option value="77">Fiji</option>
-                        <option value="78">Finland</option>
-                        <option value="79">French Guiana</option>
-                        <option value="80">French Polynesia</option>
-                        <option value="81">French Southern Territories</option>
-                        <option value="82">Gabon</option>
-                        <option value="83">Gambia</option>
-                        <option value="84">Georgia</option>
-                        <option value="85">Ghana</option>
-                        <option value="86">Gibraltar</option>
-                        <option value="87">Greece</option>
-                        <option value="88">Greenland</option>
-                        <option value="89">Guadeloupe</option>
-                        <option value="90">Guam</option>
-                        <option value="91">Guatemala</option>
-                        <option value="92">Guernsey</option>
-                        <option value="93">Guinea</option>
-                        <option value="94">Guinea-bissau</option>
-                        <option value="95">Guyana</option>
-                        <option value="96">Haiti</option>
-                        <option value="97">Heard Island and Mcdonald Islands</option>
-                        <option value="98">Holy See (Vatican City State)</option>
-                        <option value="99">Honduras</option>
-                        <option value="100">Hong Kong</option>
-                        <option value="101">Hungary</option>
-                        <option value="102">Iceland</option>
-                        <option value="103">India</option>
-                        <option value="104">Indonesia</option>
-                        <option value="105">Iran, Islamic Republic of</option>
-                        <option value="106">Iraq</option>
-                        <option value="107">Ireland</option>
-                        <option value="108">Isle of Man</option>
-                        <option value="109">Israel</option>
-                        <option value="110">Italy</option>
-                        <option value="111">Jamaica</option>
-                        <option value="112">Japan</option>
-                        <option value="113">Jersey</option>
-                        <option value="114">Jordan</option>
-                        <option value="115">Kazakhstan</option>
-                        <option value="116">Kenya</option>
-                        <option value="117">Kiribati</option>
-                        <option value="118">Korea, Democratic People's Republic of</option>
-                        <option value="119">Korea, Republic of</option>
-                        <option value="120">Kuwait</option>
-                        <option value="121">Kyrgyzstan</option>
-                        <option value="122">Lao People's Democratic Republic</option>
-                        <option value="123">Latvia</option>
-                        <option value="124">Lebanon</option>
-                        <option value="125">Lesotho</option>
-                        <option value="126">Liberia</option>
-                        <option value="127">Libyan Arab Jamahiriya</option>
-                        <option value="128">Liechtenstein</option>
-                        <option value="129">Lithuania</option>
-                        <option value="130">Luxembourg</option>
-                        <option value="131">Macao</option>
-                        <option value="132">Macedonia, The Former Yugoslav Republic of</option>
-                        <option value="133">Madagascar</option>
-                        <option value="134">Malawi</option>
-                        <option value="135">Malaysia</option>
-                        <option value="136">Maldives</option>
-                        <option value="137">Mali</option>
-                        <option value="138">Malta</option>
-                        <option value="139">Marshall Islands</option>
-                        <option value="140">Martinique</option>
-                        <option value="141">Mauritania</option>
-                        <option value="142">Mauritius</option>
-                        <option value="143">Mayotte</option>
-                        <option value="144">Mexico</option>
-                        <option value="145">Micronesia, Federated States of</option>
-                        <option value="146">Moldova, Republic of</option>
-                        <option value="147">Monaco</option>
-                        <option value="148">Mongolia</option>
-                        <option value="149">Montenegro</option>
-                        <option value="150">Montserrat</option>
-                        <option value="151">Morocco</option>
-                        <option value="152">Mozambique</option>
-                        <option value="153">Myanmar</option>
-                        <option value="154">Namibia</option>
-                        <option value="155">Nauru</option>
-                        <option value="156">Nepal</option>
-                        <option value="157">Netherlands</option>
-                        <option value="158">Netherlands Antilles</option>
-                        <option value="159">New Caledonia</option>
-                        <option value="160">New Zealand</option>
-                        <option value="161">Nicaragua</option>
-                        <option value="162">Niger</option>
-                        <option value="163">Nigeria</option>
-                        <option value="164">Niue</option>
-                        <option value="165">Norfolk Island</option>
-                        <option value="166">Northern Mariana Islands</option>
-                        <option value="167">Norway</option>
-                        <option value="168">Oman</option>
-                        <option value="169">Pakistan</option>
-                        <option value="170">Palau</option>
-                        <option value="171">Palestinian Territory, Occupied</option>
-                        <option value="172">Panama</option>
-                        <option value="173">Papua New Guinea</option>
-                        <option value="174">Paraguay</option>
-                        <option value="175">Peru</option>
-                        <option value="176">Philippines</option>
-                        <option value="177">Pitcairn</option>
-                        <option value="178">Poland</option>
-                        <option value="179">Portugal</option>
-                        <option value="180">Puerto Rico</option>
-                        <option value="181">Qatar</option>
-                        <option value="182">Reunion</option>
-                        <option value="183">Romania</option>
-                        <option value="184">Russian Federation</option>
-                        <option value="185">Rwanda</option>
-                        <option value="186">Saint Helena</option>
-                        <option value="187">Saint Kitts and Nevis</option>
-                        <option value="188">Saint Lucia</option>
-                        <option value="189">Saint Pierre and Miquelon</option>
-                        <option value="190">Saint Vincent and The Grenadines</option>
-                        <option value="191">Samoa</option>
-                        <option value="192">San Marino</option>
-                        <option value="193">Sao Tome and Principe</option>
-                        <option value="194">Saudi Arabia</option>
-                        <option value="195">Senegal</option>
-                        <option value="196">Serbia</option>
-                        <option value="197">Seychelles</option>
-                        <option value="198">Sierra Leone</option>
-                        <option value="199">Singapore</option>
-                        <option value="200">Slovakia</option>
-                        <option value="201">Slovenia</option>
-                        <option value="202">Solomon Islands</option>
-                        <option value="203">Somalia</option>
-                        <option value="204">South Africa</option>
-                        <option value="205">South Georgia and The South Sandwich Islands</option>
-                        <option value="206">Spain</option>
-                        <option value="207">Sri Lanka</option>
-                        <option value="208">Sudan</option>
-                        <option value="209">Suriname</option>
-                        <option value="210">Svalbard and Jan Mayen</option>
-                        <option value="211">Swaziland</option>
-                        <option value="212">Sweden</option>
-                        <option value="213">Switzerland</option>
-                        <option value="214">Syrian Arab Republic</option>
-                        <option value="215">Taiwan, Province of China</option>
-                        <option value="216">Tajikistan</option>
-                        <option value="217">Tanzania, United Republic of</option>
-                        <option value="218">Thailand</option>
-                        <option value="219">Timor-leste</option>
-                        <option value="220">Togo</option>
-                        <option value="221">Tokelau</option>
-                        <option value="222">Tonga</option>
-                        <option value="223">Trinidad and Tobago</option>
-                        <option value="224">Tunisia</option>
-                        <option value="225">Turkey</option>
-                        <option value="226">Turkmenistan</option>
-                        <option value="227">Turks and Caicos Islands</option>
-                        <option value="228">Tuvalu</option>
-                        <option value="229">Uganda</option>
-                        <option value="230">Ukraine</option>
-                        <option value="231">United Arab Emirates</option>
-                        <option value="232">United States Minor Outlying Islands</option>
-                        <option value="233">Uruguay</option>
-                        <option value="234">Uzbekistan</option>
-                        <option value="235">Vanuatu</option>
-                        <option value="236">Venezuela</option>
-                        <option value="237">Viet Nam</option>
-                        <option value="238">Virgin Islands, British</option>
-                        <option value="239">Virgin Islands, U.S.</option>
-                        <option value="240">Wallis and Futuna</option>
-                        <option value="241">Western Sahara</option>
-                        <option value="242">Yemen</option>
-                        <option value="243">Zambia</option>
-                        <option value="244">Zimbabwe</option>
-                      </select>
-                    </div>
-                  </div>
-  
-                </div>
-              </div>
-              
-              <div class="block col-12">
-                <div class="d-flex flex-column">
-                  <h2 class="title">Add Items To Cart</h2>
-  
-                  <div class="mt-4">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="singlelocation190">
-                      <label class="custom-control-label d-flex justify-content-between w-100" for="singlelocation190">
-                        <span class="mx-2">Single Location - $199 per month</span>
-                        <span class="mx-1">199.00$</span>
-                      </label>
-                    </div>
-
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="2ndlocation175">
-                      <label class="custom-control-label d-flex justify-content-between w-100" for="2ndlocation175">
-                        <span class="mx-2">2nd Location - $175 per month</span>
-                        <span class="mx-1">175.00$</span>
-                      </label>
-                    </div>
-
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="3rdlocation175">
-                      <label class="custom-control-label d-flex justify-content-between w-100" for="3rdlocation175">
-                        <span class="mx-2">3rd Location - $175 per month</span>
-                        <span class="mx-1">175.00$</span>
-                      </label>
-                    </div>
-
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="4thlocation175">
-                      <label class="custom-control-label d-flex justify-content-between w-100" for="4thlocation175">
-                        <span class="mx-2">4th Location - $175 per month</span>
-                        <span class="mx-1">175.00$</span>
-                      </label>
-                    </div>
-
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="5thlocation175">
-                      <label class="custom-control-label d-flex justify-content-between w-100" for="5thlocation175">
-                        <span class="mx-2">5th Location - $175 per month</span>
-                        <span class="mx-1">175.00$</span>
-                      </label>
-                    </div>
-
-                    <div class="custom-control custom-checkbox pb-0">
-                      <input type="checkbox" class="custom-control-input" id="6thlocation175">
-                      <label class="custom-control-label d-flex justify-content-between w-100" for="6thlocation175">
-                        <span class="mx-2">6th Location - $175 per month</span>
-                        <span class="mx-1">175.00$</span>
-                      </label>
-                    </div>
-
-                  </div>
-  
-                </div>
-              </div>
-              
-              <div class="block col-12">
-                <div class="d-flex flex-column">
-                  <h2 class="title">Order Summary</h2>
-  
-                  <div class="mt-4">
-                    <div class="order-summary-table table-responsive">
-                      <table class="table mb-1">
-                        <thead class="thead-light">
-                          <tr>
-                            <th scope="col">Item Name</th>
-                            <th class="text-right" scope="col">Price</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>2nd location - $175 per month</td>
-                            <td class="text-right">$175.00</td>
-                          </tr>
-                          <tr>
-                            <td>4th location - $175 per month</td>
-                            <td class="text-right">$175.00</td>
-                          </tr>
-                          <tr>
-                            <td>6th location - $175 per month</td>
-                            <td class="text-right">$175.00</td>
-                          </tr>
-                          <tr class="total">
-                            <td class="py-4">Total</td>
-                            <td class="py-4 text-right">$515.00</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="block col-12">
-                <div class="d-flex flex-column">
-                  <h2 class="title">Do you have a Coupon to apply?</h2>
-  
-                  <div class="mt-4">
-                    <div class="form-group mb-0 d-flex align-items-center coupon-code">
-                      <input type="text" placeholder="Coupon Code" class="form-control col-md-9" id="CouponCode">
-                      <div class="coupon-code-button col-sm-3 pl-4 pr-2">
-                        <button type="submit" class="btn btn-primary w-100">Apply</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="block payment-information col-12 border-0">
-                <div class="d-flex flex-column">
-                  <h2 class="title">Enter Your Payment Information</h2>
-  
-                  <div class="mt-4">
-                    <div class="mb-4 pb-1">
-                      <input class="radio-btn" name="radio-collection" id="radio-1" type="radio" value="49">
-                      <label class="radio-label" for="radio-1" tabindex="1">
-                        <div class="d-flex flex-column mr-2">  
-                          <span>Bank Card</span>
-                          <p>Visa, MasterCard, Amex and Discover</p>
-                        </div>
-                        <div class="d-flex">
-                          <img src="images/visa.svg" alt="">
-                          <img class="py-2 ml-2" src="images/mastercard.svg" alt="">
-                          <img class="py-2 ml-2" src="images/amex.svg" alt="">
-                          <img class="py-2 ml-2" src="images/discover.svg" alt="">
-                        </div>
-                      </label>
-                      <input class="radio-btn" name="radio-collection" id="radio-2" type="radio" value="349">
-                      <label class="radio-label" for="radio-2" tabindex="2">
-                        <span class="py-2 mr-2">Paypal</span>
-                        <div>
-                          <img src="images/paypal.svg" alt="">
-                        </div>
-                      </label>
-                    </div>
-
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="CardNumber">Card Number</label>
-                      <input type="text" placeholder="Card Number" class="form-control col-md-7" id="CardNumber">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="CVCNumber">CVC Number</label>
-                      <input type="text" placeholder="CVC Number" class="form-control col-md-7" id="CVCNumber">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4">Expires</label>
-                      <div class="d-flex col-md-7 px-0">
-                        <div class="col-md-6 pl-0">
-                          <select class="form-control" id="ExpirationMonth">
-                            <option value="" selected="selected">Month</option>
-                            <option value="1">January</option>
-                            <option value="2">February</option>
-                            <option value="3">March</option>
-                            <option value="4">April</option>
-                            <option value="5">May</option>
-                            <option value="6">June</option>
-                            <option value="7">July</option>
-                            <option value="8">August</option>
-                            <option value="9">September</option>
-                            <option value="10">October</option>
-                            <option value="11">November</option>
-                            <option value="12">December</option>
-                          </select>
-                        </div>
-
-                        <div class="col-md-6 pr-0">
-                          <select class="form-control" id="ExpirationYear">
-                            <option value="" selected="selected">Year</option>
-                            <option value="1">2024</option>
-                            <option value="2">2023</option>
-                            <option value="3">2022</option>
-                            <option value="4">2021</option>
-                            <option value="5">2020</option>
-                            <option value="6">2019</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group mb-0 d-flex align-items-start flex-wrap">
-                      <label class="col-md-4 mt-2 pl-0 pr-4" for="Comments">Comments</label>
-                      <textarea rows="10" class="form-control col-md-7 py-2" id="Comments"></textarea>
-                    </div>
-                    <div class="buy-button w-100 mt-4 pt-2 pl-1 pr-5">
-                      <button type="submit" class="btn btn-primary w-100">Buy Now</button>
-                    </div>
-                  </div>
-  
-                </div>
-              </div>
-            </div>
-  
-            <div class="block offer-details-block border-left col-12">
-              <div class="d-flex flex-column">
-                <h2 class="title">Offer Details</h2>
-                <div class="offer-details d-flex flex-column position-relative">
-                  <p class="mt-4 pt-2">
-                      Welcome to Spark Minds! <br><br>
-
-                      Use this page to enroll into Spark 
-                      Minds and lock in our pre-launch 
-                      pricing for LIFE.* <br><br>
-                      
-                      You will have 100% access to all Spark 
-                      Minds features:                       
-                  </p>
-                  <div class="features-list ml-4 pl-1 mt-2">
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Full Student Tracking</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Full Tuition Billing</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Retail / Point of Sale</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Full Ranks Tracking</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Team TODO and Task Lists</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Online Appointment book with automatic reminders with Google Cal Sync.</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Leads & Trial Maximizer App (never let a Trial or Leads slip through the cracks)</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Online Trial Registration with Online First Appointment Scheduler</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Mass Communication via Email and SMS Text Messaging</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Attendance Tracking</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Automated Email System</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Forms and Surveys</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Online Payments for Events, Trials, Programs</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Best damn software you will ever use</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Support when you need it</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Weekly Online Live Trainings and Live Q&A's</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">All the Stats you need</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Ability to help us decide the newest features</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Plus a lot more features already available.</span></div>
-                  </div>
-
-                  
-                  <p class="mt-3">Pre-Launch Team Bonuses:</p>
-                  <div class="features-list ml-4 pl-1 mt-2">
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Landing Page Builder ($67/month value)</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">300 SMS Text Messages ($50 Value)</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Rate locked in for Life</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">One-on-One Training for your entire team to get you started</span></div>
-                  </div>
-                  <div class="d-flex align-items-center p-4">
-                    <img class="img-fluid" src="images/guarantee-14.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-          </div>
-        </div>
-      </main>
-    </div>
-
-    <footer class="footer mt-5 pt-3">
-      <div class="footer-info bg-white py-4">
-        <div class="container d-flex justify-content-between flex-wrap">
-          <span class="my-2 mr-4">Copyright © 2019, SPARK MINDS <br> 10630 Wiles Road Coral Springs, FL 33076</span>
-          <span class="my-2">http://sparkmembership.com <br> success@sparkmembership.com</span>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-</body>
-</html> -->
