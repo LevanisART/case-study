@@ -3,6 +3,7 @@
 @import 'mixins';
 @import 'fonts';
 @import 'reset';
+@import 'animations';
 
 // @include scrollbars(13px, $primaryColor, #FFF);
 
@@ -209,6 +210,9 @@
 .section-img {
   img {
     width: 100%;
+    @media (min-width: 1200px) {
+      width: 450px;
+    }
     box-shadow: 0 4px 20px rgba(0, 0, 0, .13);
     border-radius: 8px;
   }
@@ -347,15 +351,17 @@
 
 @include media-breakpoint-down(xs) {
   .section-top {
-    padding: 80px 0;
+    padding: 70px 0;
     .company-logo {
       img {
         width: 230px;
       }
     }
     .casestudy-title {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 32px;
+      padding: 10px;
+      margin-top: .5rem!important;
     }
   }
 
@@ -364,6 +370,7 @@
       font: {
         size: 20px;
       }
+      line-height: 30px;
     }
     .section-description {
       font-size: 13px;
@@ -377,9 +384,7 @@
     padding-left: 40px;
     padding-right: 40px;
   }
-}
-
-@include media-breakpoint-down(xs) {
+  
   .navbar.navbar-light {
     .navbar-collapse {
       position: absolute;
@@ -410,6 +415,17 @@
       }
     }
   }
+
+  .navbar-nav {
+    &.animated {
+      animation-duration: 0s;
+    }
+  }
+
+  .services .services-item .service-title {
+    font-size: 14px;
+  }
+
   .video {
     padding: 0 !important;
   }
