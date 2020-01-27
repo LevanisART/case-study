@@ -17,7 +17,7 @@
   }
 }
 
-.navbar {
+.navbar.navbar-light {
   .nav-item {
     margin-left: 2.25rem;
   }
@@ -32,6 +32,21 @@
       color: #FFF;
     }
   }
+}
+
+.navbar-light .navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: $primaryColor;
+  border-color: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23CD3D40' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cpath d='M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z'/%3E%3Cpath d='M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z'/%3E%3Cpath d='M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20 C512,404.954,503.046,396,492,396z'/%3E%3C/svg%3E%0A");
 }
 
 
@@ -344,8 +359,67 @@
     }
   }
 
+  .section {
+    .section-title {
+      font: {
+        size: 20px;
+      }
+    }
+    .section-description {
+      font-size: 13px;
+    }
+    .section-subtitle {
+      font-size: 13px;
+    }
+  }
+
   .container {
     padding-left: 40px;
     padding-right: 40px;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .navbar.navbar-light {
+    .navbar-collapse {
+      position: absolute;
+      top: 55px;
+      right: 0;
+      z-index: 1;
+      background: #FFF;
+      min-width: 160px;
+      border-radius: 5px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    }
+    .nav-item {
+      margin-left: 0;
+      width: 100%;
+      border-bottom: 1px solid #f2f2f2;
+      .nav-link {
+        padding: 20px !important;
+        width: 100%;
+        text-align: center;
+      }
+      &.btn-primary {
+        background-color: transparent;
+        border-color: transparent;
+        .nav-link {
+          padding: 20px !important;
+          color: #000;
+        }
+      }
+    }
+  }
+  .video {
+    padding: 0 !important;
+  }
+}
+
+@media(max-width: 450px) {
+  .before-after {
+    .website {
+      border-radius: 15px;
+      padding: 10px !important;
+    }
   }
 }
