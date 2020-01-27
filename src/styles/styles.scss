@@ -64,11 +64,15 @@
 }
 
 .btn-primary:hover {
-    color: #fff;
-    background-color: $primaryColor;
-    border-color: $primaryColor;
+  color: #fff;
+  background-color: $primaryColor;
+  border-color: $primaryColor;
 }
 
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(205,61,64,.5);
+  outline: none;
+}
 
 .page {
   display: flex;
@@ -87,8 +91,12 @@
 .section-top {
   background-image: url('../images/hunt-a-killer.jpg');
   background-size: cover;
-  background-position: center -70px;
-  height: 543px;
+  @media (min-width: 1400px) {
+    background-position: center -70px;
+  }
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 165px 0;
   position: relative;
   &::before {
     content: '';
@@ -102,7 +110,12 @@
     color: #FFF;
     font-size: 30px;
     font-weight: 600;
-    width: 630px;
+    padding: 0 30px;
+    width: 100%;
+    @media(min-width: 700px) {
+      width: 630px;
+      padding: 0;
+    }
     text-align: center;
     line-height: 45px;
     text-shadow: 0 4px 8px rgba(0, 0, 0, .25);
@@ -180,6 +193,7 @@
 
 .section-img {
   img {
+    width: 100%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, .13);
     border-radius: 8px;
   }
@@ -257,6 +271,15 @@
   border-radius: 10px;
 }
 
+.contact .section-subtitle {
+  font-size: 16px;
+}
+
+.contact .btn-primary {
+  font-size: 17px;
+  font-weight: 600;
+}
+
 .footer {
   box-shadow: 0 -4px 4px rgba(221, 221, 221, .25);
   .footer-info {
@@ -269,5 +292,60 @@
       }
       line-height: 23px;
     }
+  }
+}
+
+
+@include media-breakpoint-down(lg) {
+  .section-top {
+    padding: 100px 0;
+    .company-logo {
+      img {
+        width: 270px;
+      }
+    }
+    .casestudy-title {
+      font-size: 25px;
+    }
+  }
+
+  .section {
+    .section-title {
+      font: {
+        size: 22px;
+        weight: 600;
+      }
+    }
+    .section-description {
+      font-size: 14px;
+    }
+    .section-subtitle {
+      font-size: 13px;
+    }
+  }
+
+  .services .services-item .service-title {
+    font-size: 16px;
+  }
+}
+
+
+@include media-breakpoint-down(xs) {
+  .section-top {
+    padding: 80px 0;
+    .company-logo {
+      img {
+        width: 230px;
+      }
+    }
+    .casestudy-title {
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
