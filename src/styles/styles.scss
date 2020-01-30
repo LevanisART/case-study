@@ -141,6 +141,7 @@
 .section {
   .section-title {
     color: $titleColor;
+    line-height: 42px;
     font: {
       size: 28px;
       weight: 600;
@@ -227,69 +228,38 @@
 }
 
 
-.before-after {
-  .tab {
-    background: #FFF;
-    border: 1px solid #F6F6F8;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
-    border-radius: 10px;
-    .tab-title {
-      color: $titleColor;
-      font-size: 18px;
-      font-weight: 600;
-    }
-    .tab-description {
-      color: $textColor;
-      font-size: 15px;
-      line-height: 24px;
-    }
-    &.active {
-      background: $primaryColor;
-      .tab-title {
-        color: #FFF;
-      }
-      .tab-description {
-        color: #FFF;
-      }
+.conversion-rate-optimization {
+  box-shadow: 0 6px 35px rgba(0, 0, 0, .06);
+  border-radius: 10px;
+  .cro-section-title {
+    color: $primaryColor;
+    font: {
+      size: 20px;
+      weight: 600;
     }
   }
-
-  .website-shadow {
-    width: 80%;
-    height: 204px;
-    position: absolute;
-    bottom: 0px;
-    box-shadow: 0 8px 60px rgba(0, 0, 0, .25);
+  .cro-section-description {
+    color: $textColor;
+    font-size: 16px;
+    line-height: 28px;
   }
+}
 
-  .website {
-    width: 100%;
-    height: 496px;
-    background: #E8E8E8;
-    border-radius: 40px;
-    position: relative;
-    .website-img {
-      overflow-y: scroll;
-      height: 100%;
-      border-radius: 11px;
-      &::-webkit-scrollbar {
-        width: 1.2em;
-        height: 2em;
-        background: #fff;
-        border-radius: 0 11px 11px 0;
-      }
-      &::-webkit-scrollbar-thumb {
-        border: .4em solid transparent;
-        background-clip: padding-box;
-        border-radius: 1em;
-        background-color: #d4d4d4;
-      }
-      &::-webkit-scrollbar-corner {
-          background-color: transparent
-      }
+.section-right {
+  @media (max-width: 991.98px) {
+    .section-right-column {
+      order: 2;
     }
-    img {
-      width: 100%;
+  }
+}
+
+.video-section {
+  @media (max-width: 991.98px) {
+    .video {
+      order: 2;
+    }
+    .about-video {
+      order: 1;
     }
   }
 }
@@ -353,6 +323,18 @@
 
   .services .services-item .service-title {
     font-size: 16px;
+  }
+
+  .conversion-rate-optimization {
+    .cro-section-title {
+      font: {
+        size: 18px;
+      }
+    }
+    .cro-section-description {
+      font-size: 15px;
+      line-height: 26px;
+    }
   }
 }
 
@@ -442,6 +424,18 @@
 
   .video {
     padding: 0 !important;
+  }
+
+  .conversion-rate-optimization {
+    .cro-section-title {
+      font: {
+        size: 16px;
+      }
+    }
+    .cro-section-description {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 }
 
