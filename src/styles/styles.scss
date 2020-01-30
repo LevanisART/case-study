@@ -416,12 +416,6 @@
     font-size: 14px;
   }
 
-  .before-after .tab {
-    .tab-title {
-      font-size: 16px;
-    }
-  }
-
   .video {
     padding: 0 !important;
   }
@@ -435,15 +429,6 @@
     .cro-section-description {
       font-size: 14px;
       line-height: 24px;
-    }
-  }
-}
-
-@media(max-width: 450px) {
-  .before-after {
-    .website {
-      border-radius: 15px;
-      padding: 10px !important;
     }
   }
 }
