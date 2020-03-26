@@ -1,0 +1,20 @@
+//Scrollbar
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, $background-color)) {
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-button:start:decrement,
+  ::-webkit-scrollbar-button:end:increment  {
+	  display: none;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+  }
+}
