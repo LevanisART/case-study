@@ -242,6 +242,11 @@
     border: 1px solid #F6F6F8;
     box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
     border-radius: 10px;
+    .tab-title {
+      color: $titleColor;
+      font-size: 18px;
+      font-weight: 600;
+    }
     @media(max-width: 500px) {
       width: 100%;
       margin-left: 0 !important;
@@ -249,11 +254,10 @@
       &:first-child {
         margin-bottom: 1.5rem !important;
       }
-    }
-    .tab-title {
-      color: $titleColor;
-      font-size: 18px;
-      font-weight: 600;
+      .tab-title {
+        padding-left: .25rem !important;
+        padding-right: .25rem !important;
+      }
     }
     .tab-description {
       color: $textColor;
