@@ -141,6 +141,7 @@
 .section {
   .section-title {
     color: $titleColor;
+    line-height: 42px;
     font: {
       size: 28px;
       weight: 600;
@@ -380,10 +381,10 @@
       line-height: 30px;
     }
     .section-description {
-      font-size: 13px;
+      font-size: 14px;
     }
     .section-subtitle {
-      font-size: 13px;
+      font-size: 14px;
     }
   }
 
