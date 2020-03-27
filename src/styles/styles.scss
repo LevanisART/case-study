@@ -146,6 +146,10 @@
       size: 28px;
       weight: 600;
     }
+    &.title-sm {
+      font-size: 21px;
+      line-height: 30px;
+    }
   }
   .section-description {
     color: $textColor;
@@ -346,6 +350,10 @@
         size: 22px;
         weight: 600;
       }
+      &.title-sm {
+        font-size: 18px;
+        line-height: 27px;
+      }
     }
     .section-description {
       font-size: 14px;
@@ -383,6 +391,10 @@
         size: 20px;
       }
       line-height: 30px;
+      &.title-sm {
+        font-size: 15px;
+        font-weight: 700;
+      }
     }
     .section-description {
       font-size: 14px;
