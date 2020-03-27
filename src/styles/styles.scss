@@ -107,12 +107,12 @@
 .section-top {
   background-image: url('../images/hunt-a-killer.jpg');
   background-size: cover;
-  @media (min-width: 1400px) {
-    background-position: center -70px;
-  }
   background-position: center center;
+  @media (min-width: 1200px) {
+    background-position: center -30px;
+  }
   background-repeat: no-repeat;
-  padding: 165px 0;
+  padding: 135px 0;
   position: relative;
   &::before {
     content: '';
@@ -147,7 +147,8 @@
       weight: 600;
     }
     &.title-sm {
-      font-size: 21px;
+      font-size: 20px;
+      font-weight: bold;
       line-height: 30px;
     }
   }
@@ -342,7 +343,7 @@
 
 @include media-breakpoint-down(lg) {
   .section-top {
-    padding: 100px 0;
+    padding: 90px 0;
     .company-logo {
       img {
         width: 270px;
@@ -380,7 +381,7 @@
 
 @include media-breakpoint-down(xs) {
   .section-top {
-    padding: 70px 0;
+    padding: 40px 0;
     .company-logo {
       img {
         width: 230px;
