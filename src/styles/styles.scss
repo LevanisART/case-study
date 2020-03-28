@@ -110,11 +110,8 @@ button:focus {
   background-image: url('../images/hunt-a-killer.jpg');
   background-size: cover;
   background-position: center center;
-  @media (min-width: 1200px) {
-    background-position: center -30px;
-  }
   background-repeat: no-repeat;
-  padding: 135px 0;
+  padding: 50px 0;
   position: relative;
   &::before {
     content: '';
@@ -362,7 +359,7 @@ button:focus {
 
 @include media-breakpoint-down(lg) {
   .section-top {
-    padding: 90px 0;
+    padding: 40px 0;
     .company-logo {
       img {
         width: 270px;
@@ -395,10 +392,10 @@ button:focus {
 
 @include media-breakpoint-down(xs) {
   .section-top {
-    padding: 40px 0;
+    padding: 30px 0;
     .company-logo {
       img {
-        width: 230px;
+        width: 210px;
       }
     }
     .casestudy-title {
