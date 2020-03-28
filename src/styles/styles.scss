@@ -144,15 +144,15 @@
 .section {
   .section-title {
     color: $titleColor;
-    line-height: 42px;
+    line-height: 36px;
     font: {
-      size: 28px;
+      size: 26px;
       weight: 600;
     }
     &.title-sm {
-      font-size: 20px;
-      font-weight: bold;
-      line-height: 30px;
+      color: $primaryColor;
+      font-size: 14px;
+      line-height: 1;
     }
   }
   .section-description {
@@ -367,10 +367,6 @@
         size: 22px;
         weight: 600;
       }
-      &.title-sm {
-        font-size: 18px;
-        line-height: 27px;
-      }
     }
     .section-description {
       font-size: 14px;
@@ -408,10 +404,6 @@
         size: 20px;
       }
       line-height: 30px;
-      &.title-sm {
-        font-size: 15px;
-        font-weight: 700;
-      }
     }
     .section-description {
       font-size: 14px;
