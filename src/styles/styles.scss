@@ -110,8 +110,11 @@ button:focus {
   background-image: url('../images/hunt-a-killer.jpg');
   background-size: cover;
   background-position: center center;
+  @media (min-width: 1600px) {
+    background-position: center -20px;
+  }
   background-repeat: no-repeat;
-  padding: 50px 0;
+  padding: 70px 0;
   position: relative;
   &::before {
     content: '';
