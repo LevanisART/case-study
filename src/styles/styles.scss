@@ -68,10 +68,6 @@ button:focus {
   border-radius: 5px;
   font-family: "Montserrat";
   font-size: 14px;
-  span {
-    color: #fff !important;
-    font-size: 14px;
-  }
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
@@ -184,7 +180,7 @@ button:focus {
       box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
     }
     .service-title {
-      color: $textColor;
+      color: #536288;
       font: {
         size: 18px;
         weight: 500;
