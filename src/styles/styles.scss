@@ -50,9 +50,16 @@
 }
 
 .navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='19.7593' y='2.77393' width='2.76072' height='23.3344' rx='1.38036' transform='rotate(45 19.7593 2.77393)' fill='%23CD3D40'/%3E%3Crect width='2.75869' height='23.3344' rx='1.37934' transform='matrix(-0.707107 0.707107 0.707107 0.707107 5.21045 2.77466)' fill='%23CD3D40'/%3E%3C/svg%3E%0A");
+}
+
+.navbar-light .collapsed .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg fill='%23CD3D40' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cpath d='M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z'/%3E%3Cpath d='M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z'/%3E%3Cpath d='M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20 C512,404.954,503.046,396,492,396z'/%3E%3C/svg%3E%0A");
 }
 
+button:focus {
+  outline: none;
+}
 
 .btn-primary {
   color: #fff;
