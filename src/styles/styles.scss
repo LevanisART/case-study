@@ -159,6 +159,13 @@ button:focus {
     font-size: 15px;
     font-weight: 500;
     line-height: 29px;
+    .title {
+      color: #000;
+      font: {
+        size: 17px;
+        weight: 600;
+      }
+    }
   }
   .section-subtitle {
     color: $textColor;
@@ -233,21 +240,28 @@ button:focus {
     box-shadow: 0 4px 20px rgba(0, 0, 0, .13);
     border-radius: 8px;
   }
+  &.img-mobile {
+    img {
+      width: unset;
+    }
+  }
 }
 
 
 .before-after {
   .tab {
-    background: #FFF;
-    border: 1px solid #F6F6F8;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
-    border-radius: 10px;
-    .tab-title {
-      color: $titleColor;
-      font-size: 18px;
-      font-weight: 600;
+    a {
+      background: #FFF;
+      border: 1px solid #F6F6F8;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
+      border-radius: 10px;
+      .tab-title {
+        color: $titleColor;
+        font-size: 17px;
+        font-weight: 600;
+      }
     }
-    @media(max-width: 500px) {
+    @media(max-width: 575px) {
       width: 100%;
       margin-left: 0 !important;
       margin-right: 0 !important;
@@ -264,7 +278,7 @@ button:focus {
       font-size: 15px;
       line-height: 24px;
     }
-    &.active {
+    &.active a {
       background: $primaryColor;
       .tab-title {
         color: #FFF;
@@ -285,12 +299,13 @@ button:focus {
 
   .website {
     width: 100%;
-    height: 496px;
+    height: 422px;
     @include media-breakpoint-only(md) {
       height: 650px;
     }
     background: #E8E8E8;
-    border-radius: 40px;
+    padding: 20px;
+    border-radius: 30px;
     position: relative;
     .website-img {
       overflow-y: scroll;
